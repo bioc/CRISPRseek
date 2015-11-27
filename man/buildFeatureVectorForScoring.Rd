@@ -8,8 +8,7 @@ Build feature vectors
 Build feature vectors for calculating scores of off targets
 }
 \usage{
-buildFeatureVectorForScoring(hits, gRNA.size = 20, 
-   enable.multicore = FALSE, canonical.PAM = "NGG")
+buildFeatureVectorForScoring(hits, gRNA.size = 20, canonical.PAM = "NGG")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -32,8 +31,6 @@ gRNA size, default 20
   \item{canonical.PAM}{
 Canonical PAM, default NGG
 }
-    \item{enable.multicore}{Indicate whether enable parallel processing, default FALSE.
-For super long sequences with lots of gRNAs, suggest set it to TRUE}
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
