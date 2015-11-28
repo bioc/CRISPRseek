@@ -238,7 +238,7 @@ findgRNAs <-
 	            col.names = colNames)
             if (n.minus.gRNAs > 0 && n.plus.gRNAs > 0)
             {
-                plus_start <- as.numeric(as.character(plus.gRNAs[ , 3L]))
+                plus_start <- as.numeric(as.character(pos.gRNAs[ , 3L]))
                 minus_start <- as.numeric(as.character(minus.gRNAs[ , 3L]))
                 pair_index <- .compute_pair_index2(plus_start,
                                                    minus_start,
