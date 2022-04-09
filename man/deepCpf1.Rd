@@ -32,20 +32,23 @@ of the scores, but one can still get accurate scoring with only the
 34 bp target sequences.
 }
 \examples{
+if (interactive())
+{
 library(keras)
-library(mltools)
-library(dplyr)
-library(data.table)
+     library(mltools)
+     library(dplyr)
+     library(data.table)
 
-use_implementation("tensorflow")
+     use_implementation("tensorflow")
 
-extendedSequence <- c('GTTATTTGAGCAATGCCACTTAATAAACATGTAA',
- 'TGACTTTGAATGGAGTCGTGAGCGCAAGAACGCT',
- 'GTTATTTGAGCAATGCCACTTAATAAACATGTAA',
- 'TGACTTTGAATGGAGTCGTGAGCGCAAGAACGCT')
-chrom_acc <- c(0,1, 0, 1)
+     extendedSequence <- c('GTTATTTGAGCAATGCCACTTAATAAACATGTAA',
+        'TGACTTTGAATGGAGTCGTGAGCGCAAGAACGCT',
+        'GTTATTTGAGCAATGCCACTTAATAAACATGTAA',
+        'TGACTTTGAATGGAGTCGTGAGCGCAAGAACGCT')
+     chrom_acc <- c(0,1, 0, 1)
 
- deepCpf1(extendedSequence = extendedSequence, chrom_acc = chrom_acc)
+     deepCpf1(extendedSequence = extendedSequence, chrom_acc = chrom_acc)
+}
 }
 \references{
 Kim et al., Deep learning improves prediction of CRISPR–Cpf1 
