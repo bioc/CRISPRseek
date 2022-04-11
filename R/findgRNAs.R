@@ -340,8 +340,8 @@
 #'         featureWeightMatrixFile = featureWeightMatrixFile,
 #'         efficacyFile = "testCRISPRscanEfficacy.xls"
 #'      )
-#' 
-#'     findgRNAs(inputFilePath = system.file("extdata", 
+#'     if (interactive())
+#'        findgRNAs(inputFilePath = system.file("extdata", 
 #'         "cpf1.fa", package = "CRISPRseek"), 
 #'         findPairedgRNAOnly=FALSE, 
 #'         pairOutputFile = "testpairedgRNAs-cpf1.xls", 
@@ -352,7 +352,8 @@
 #'         rule.set = "DeepCpf1",
 #'        efficacyFile = "testcpf1Efficacy.xls")
 #' 
-#'     findgRNAs(inputFilePath = system.file("extdata", 
+#'     if (interactive())
+#'        findgRNAs(inputFilePath = system.file("extdata", 
 #'              "cpf1.fa", package = "CRISPRseek"), 
 #'              findPairedgRNAOnly=FALSE, 
 #'              pairOutputFile = "testpairedgRNAs-cpf1.xls", 
@@ -364,7 +365,8 @@
 #'              efficacyFile = "testcpf1Efficacy.xls", baseEditing =  TRUE, 
 #'              editingWindow=20, targetBase = "X")
 #' 
-#'     findgRNAs(inputFilePath = system.file("extdata", 
+#'     if (interactive())
+#'	   findgRNAs(inputFilePath = system.file("extdata", 
 #'              "cpf1.fa", package = "CRISPRseek"), 
 #'              findPairedgRNAOnly=FALSE, 
 #'              pairOutputFile = "testpairedgRNAs-cpf1.xls", 
