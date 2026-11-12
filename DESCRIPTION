@@ -1,5 +1,5 @@
 Package: CRISPRseek
-Version: 1.53.1
+Version: 1.53.2
 Title: Design of guide RNAs in CRISPR genome-editing systems
 Author: 
   Lihua Julie Zhu
@@ -17,7 +17,7 @@ Author:
 Maintainer: 
   Lihua Julie Zhu <julie.zhu@umassmed.edu>
   Kai Hu <kai.hu@umassmed.edu>
-Date: 2026-10-13
+Date: 2026-11-12
 Description: The package encompasses functions to find potential guide RNAs for the CRISPR-based genome-editing systems including the Base Editors and the Prime Editors when supplied with target sequences as input. Users have the flexibility to filter resulting guide RNAs based on parameters such as the absence of restriction enzyme cut sites or the lack of paired guide RNAs. The package also facilitates genome-wide exploration for off-targets, offering features to score and rank off-targets, retrieve flanking sequences, and indicate whether the hits are located within exon regions. All detected guide RNAs are annotated with the cumulative scores of the top5 and topN off-targets together with the detailed information such as mismatch sites and restrictuion enzyme cut sites. The package also outputs INDELs and their frequencies for Cas9 targeted sites.
 Depends: R (>= 3.5.0), BiocGenerics, Biostrings, GenomicFeatures
 Imports: parallel, seqinr, S4Vectors (>= 0.9.25), IRanges, BSgenome, hash, methods,reticulate,rhdf5,XVector, DelayedArray, Seqinfo, GenomicRanges, keras, gtools, openxlsx, rio, rlang, stringr

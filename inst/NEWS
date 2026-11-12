@@ -1,3 +1,5 @@
+CHANGES IN VERSION 1.53.2
+     o updated the stored paired and unpaired OfftargetAnalysis.xlsx files for the Bioconductor 3.24 hg19 TxDb and org.Hs.eg.db.
 CHANGES IN VERSION 1.53.1
      o replaced mltools::one_hot in deepCpf1() with an internal A/C/G/T encoder and removed the mltools, dplyr, and data.table dependencies.
 CHANGES IN VERSION 1.44.1
